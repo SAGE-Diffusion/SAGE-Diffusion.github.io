@@ -96,8 +96,8 @@ table.affiliations {
     margin-right: auto;
     margin-top: .5em;
     margin-bottom: .5em;
-    width: 50%;
-    max-width: 900px;
+    width: 900px;
+    max-width: 80%;
 }
 
 table.affiliations td {
