@@ -55,7 +55,7 @@
     <table width="80%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
         <tbody>
             <tr>
-                <td align="center"> <a href="https://arxiv.org/pdf/2306.00974.pdf" target="_blank">[Paper]</a>&emsp;&emsp;<a href="https://github.com/qihao067/SAGE">[Code (Coming soon)]</a>&emsp;&emsp;<a href="https://scholar.googleusercontent.com/scholar.bib?q=info:B4iLxXIrq9UJ:scholar.google.com/&output=citation&scisdr=Cm0un2HGEPvDtixOCmE:AGlGAw8AAAAAZI9IEmG85jqEB3BptvN5jneazN8&scisig=AGlGAw8AAAAAZI9IEngo8q7zDh9RWV1wcmhpJG4&scisf=4&ct=citation&cd=-1&hl=en">[BibTeX]</a> </td>
+                <td align="center"> <a href="https://arxiv.org/pdf/2306.00974.pdf" target="_blank">[Paper]</a>&emsp;&emsp;<a href="https://github.com/qihao067/SAGE">[Code (Coming soon)]</a>&emsp;&emsp;<a href="https://sage-diffusion.github.io/file/bibtex.txt">[BibTeX]</a> </td>
             </tr>
         </tbody>
     </table>
@@ -68,7 +68,7 @@
         <table width="940" border="0">
             <tbody>
                 <figure>
-                    <img src="./img/AttDis_fig1.jpg" alt="" width="990" style="margin: auto" />
+                    <img src="./img/AttDis_fig1.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
                 </figure>
 
                 <ul>
@@ -123,7 +123,7 @@
         comprehensive list along with the corresponding generated images to serve as a valuable testbed for 
         evaluating diffusion models.</p>
         <div style="text-align: center">
-            <img src="./img/EXP-attText.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/EXP-attText.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <p class="section">&nbsp;</p>
 
@@ -131,7 +131,7 @@
         <p class="section"><b>II.  Latent Samples that Lead to Distorted Images</b></p>
         <p> We find samples/regions in the latent space that consistently lead to distorted images under various commonly used prompts, implying that parts of the latent space are not well-structured. We are also capable of generating distorted images that can be interpreted by the SOTA vision models as the same category with high confidence scores, despite being unintelligible to humans, indicating that both types of models have representation biases that differ from those of human vision.</p>
         <div style="text-align: center">
-            <img src="./img/EXP-attZ-distorted.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/EXP-attZ-distorted.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <p class="section">&nbsp;</p>
 
@@ -139,7 +139,7 @@
         <p class="section"><b>III.  Latent Samples that Do Not Depict the Key Object but Correlated Background</b></p>
         <p> We find latent samples that generate objects commonly associated with the key object, rather than generating the key object class itself. It indicates a partial misalignment between the latent space and the prompt space. Furthermore, we demonstrate the correlation between this misalignment and the stability of diffusion models.</p>
         <div style="text-align: center">
-            <img src="./img/EXP-attZ-unrelated.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/EXP-attZ-unrelated.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <p class="section">&nbsp;</p>
 
@@ -147,7 +147,7 @@
         <p class="section"><b>IV.  Universal Token Embeddings that Overwrite the Input Prompts</b></p>
         <p> We also find adversarial token embeddings, which only slightly change the CLIP score, but cause the diffusion model to produce irrelevant images. These adversarial embeddings are universal in the sense that they cause failures across a variety of input prompts. It also reveals potential safety concerns.</p>
         <div style="text-align: center">
-            <img src="./img/EXP-attPrompt.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/EXP-attPrompt.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <p class="section">&nbsp;</p>
 
@@ -157,19 +157,19 @@
         <p class="section"><b>More Results</b></p>
         <p> We provide additional representative text prompts that diffusion models cannot understand.</p>
         <div style="text-align: center">
-            <img src="./img/Supp_text1.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/Supp_text1.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <div style="text-align: center">
-            <img src="./img/Supp_text2.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/Supp_text2.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <div style="text-align: center">
-            <img src="./img/Supp_text3.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/Supp_text3.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <div style="text-align: center">
-            <img src="./img/Supp_text4.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/Supp_text4.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
         <div style="text-align: center">
-            <img src="./img/Supp_text5.jpg" alt="" width="990" style="margin: auto" />
+            <img src="./img/Supp_text5.jpg" alt="" width="990" max-width="100%" style="margin: auto" />
         </div>
 
         <!-- <p class="section">&nbsp;</p>
