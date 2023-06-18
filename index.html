@@ -115,13 +115,7 @@
         <p class="section">&nbsp;</p>
 
         <p class="section"><b>I.  Natural Text Prompts that are Unintelligible for Diffusion Models</b></p>
-        <p> We find a large amount of concise text prompts (at most 15 words) that are natural and easily 
-        understood by humans but not by the SOTA diffusion models. Despite being trained on vast amounts of 
-        data, current models still struggle to fully understand and describe certain aspects of linguistic 
-        representations, such as multi-object interaction, scene composition, actions, or part-level 
-        information. We manually summarize the key features that can contribute to failures and provide a 
-        comprehensive list along with the corresponding generated images to serve as a valuable testbed for 
-        evaluating diffusion models.</p>
+        <p> We find a large number of concise text prompts (at most 15 words) that are natural and easily understood by humans but not by the SOTA diffusion models. Current models still struggle to grasp and describe certain linguistic representations. We manually summarize the key features and categorize them into ten distinct types, based on the underlying causes.</p>
         <div style="text-align: center">
             <img src="./img/EXP-attText.jpg" alt="" width="990" style="margin: auto" />
         </div>
@@ -129,7 +123,7 @@
 
 
         <p class="section"><b>II.  Latent Samples that Lead to Distorted Images</b></p>
-        <p> We find samples/regions in the latent space that consistently lead to distorted images under various commonly used prompts, implying that parts of the latent space are not well-structured. We are also capable of generating distorted images that can be interpreted by the SOTA vision models as the same category with high confidence scores, despite being unintelligible to humans, indicating that both types of models have representation biases that differ from those of human vision.</p>
+        <p> We find samples/regions in the latent space that consistently lead to distorted images under various commonly used prompts, implying that parts of the latent space are not well-structured. We also show that both generative models and discriminative models have representation biases that differ from those of human vision.</p>
         <div style="text-align: center">
             <img src="./img/EXP-attZ-distorted.jpg" alt="" width="990" style="margin: auto" />
         </div>
