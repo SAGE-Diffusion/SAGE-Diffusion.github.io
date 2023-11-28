@@ -14,7 +14,7 @@
     <title>Intriguing Properties of Text-guided Diffusion Models</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
-        content="Project page for &#39;Intriguing Properties of Text-guided Diffusion Models.&#39;">
+        content="Project page for &#39;Discovering Failure Modes of Text-guided Diffusion Models via Adversarial Search.&#39;">
     <!-- <link rel="icon" href="./path.jpg"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,12 +25,12 @@
     <title>Intriguing Properties of Text-guided Diffusion Models</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
-        content="Project page for &#39;Intriguing Properties of Text-guided Diffusion Models.&#39;">
+        content="Project page for &#39;Discovering Failure Modes of Text-guided Diffusion Models via Adversarial Search.&#39;">
     <!-- <link rel="icon" href="./path.jpeg"> -->
 </head>
 
 <body>
-    <p class="title">Intriguing Properties of Text-guided Diffusion Models</p>
+    <p class="title">Discovering Failure Modes of Text-guided Diffusion Models via Adversarial Search</p>
     <div style="text-align: center; font-size: 40pt; margin-bottom: 30px">
             <!-- <span>CVPR 2023</span> -->
     </div>
@@ -83,31 +83,7 @@
         &nbsp;<br>
 
         <p style="text-align: center;"><span class="section"><strong>Abstract</strong></span></p>
-        <p> Text-guided diffusion models (TDMs) are widely applied but can fail unexpectedly.
-        Common failures include: (i) natural-looking text prompts generating images with
-        the wrong content, or (ii) different random samples of the latent variables that
-        generate vastly different, and even unrelated, outputs despite being conditioned
-        on the same text prompt. In this work, we aim to study and understand the failure
-        modes of TDMs in more detail. To achieve this, we propose SAGE, an adversarial
-        attack on TDMs that uses image classifiers as surrogate loss functions, to search
-        over the discrete prompt space and the high-dimensional latent space of TDMs
-        to automatically discover unexpected behaviors and failure cases in the image
-        generation. We make several technical contributions to ensure that SAGE finds
-        failure cases of the diffusion model, rather than the classifier, and verify this
-        in a human study. Our study reveals four intriguing properties of TDMs that
-        have not been systematically studied before: (1) We find a variety of natural text
-        prompts producing images that fail to capture the semantics of input texts. We
-        categorize these failures into ten distinct types based on the underlying causes. (2)
-        We find samples in the latent space (which are not outliers) that lead to distorted
-        images independent of the text prompt, suggesting that parts of the latent space are
-        not well-structured. (3) We also find latent samples that lead to natural-looking
-        images which are unrelated to the text prompt, implying a potential misalignment
-        between the latent and prompt spaces. (4) By appending a single adversarial token
-        embedding to an input prompt we can generate a variety of specified target objects,
-        while only minimally affecting the CLIP score. This demonstrates the fragility of
-        language representations and raises potential safety concerns. By shedding light on
-        the failure modes and weaknesses of TDMs, our work aims to foster responsible
-        development and deployment of generative AI systems.
+        <p> Text-guided diffusion models (TDMs) are widely applied but can fail unexpectedly. Common failures include: (i) natural-looking text prompts generating images with the wrong content, or (ii) different random samples of the latent variables that generate vastly different, and even unrelated, outputs despite being conditioned on the same text prompt. In this work, we aim to study and understand the failure modes of TDMs in more detail. To achieve this, we propose SAGE, the first adversarial search method on TDMs that systematically explores the discrete prompt space and the high-dimensional latent space, to automatically discover undesirable behaviors and failure cases in image generation. We use image classifiers as surrogate loss functions during searching, and employ human inspections to validate the identified failures. For the first time, our method enables efficient exploration of both the discrete and intricate human language space and the challenging latent space, overcoming the gradient vanishing problem. Then, we demonstrate the effectiveness of SAGE on five widely used generative models and reveal four typical failure modes that have not been systematically studied before: (1) We find a variety of natural text prompts that generate images failing to capture the semantics of input texts. We further discuss the underlying causes and potential solutions based on the results. (2) We find regions in the latent space that lead to distorted images independent of the text prompt, suggesting that parts of the latent space are not well-structured. (3) We also find latent samples that result in natural-looking images unrelated to the text prompt, implying a possible misalignment between the latent and prompt spaces. (4) By appending a single adversarial token embedding to any input prompts, we can generate a variety of specified target objects, with minimal impact on CLIP scores, demonstrating the fragility of language representations.
         <p class="section">&nbsp;</p>
 
         <hr class="hr-twill-colorful">
